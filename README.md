@@ -1,3 +1,11 @@
+# Midwestern Interactive Tech Challenge
+
+This challenge was completed by Clint Edwards
+
+# Trying out new architecture
+
+I am trying out a new architecture for my styles. Normally each component has a folder with it's .jsx component and .scss file in that folder. In my last project that was a little cumbersom to navigate the components while building it. I'm going to try having a styles folder that houses all the styles and then in components there will only be the .jsx component.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
