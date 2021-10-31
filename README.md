@@ -1,6 +1,7 @@
 # Midwestern Interactive Tech Challenge
 
 This challenge was completed by Clint Edwards
+I built this with mobile first in mind. Even though this is small I used the file architecture I would on a full scale project.
 
 # Trying out new architecture
 
