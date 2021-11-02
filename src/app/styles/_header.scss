@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+  .logo {
+    max-height: 50px;
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  li {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: $gold;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .contact_header_background {
+    background: rgb(34, 34, 34);
+    background: linear-gradient(
+      90deg,
+      rgba(34, 34, 34, 1) 0%,
+      rgba(34, 34, 34, 1) 50%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+}

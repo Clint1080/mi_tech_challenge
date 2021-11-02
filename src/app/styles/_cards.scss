@@ -1,0 +1,67 @@
+ul.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media screen and (min-width: 850px) {
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 850px) and (max-width: 1225px) {
+    justify-content: space-evenly;
+  }
+  li.card {
+    background: #fff;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    background-color: $mg_text_light;
+    border-radius: 3px;
+    padding: 1rem 3rem;
+    max-width: 390px;
+    justify-content: space-between;
+    @media screen and (max-width: 1235px) {
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+    }
+    // &:not(:last-child) {
+    //   margin-right: 1.5rem;
+    // }
+  }
+  .card_image_container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  .card_detail_container {
+    text-align: center;
+  }
+  img {
+    align-self: center;
+    // margin-top: 0.6rem;
+  }
+  h2 {
+    text-align: left;
+    font-size: 2.25em;
+    color: $dg_background_dark;
+    font-weight: 700;
+    margin-top: 1rem;
+    letter-spacing: 0.85px;
+  }
+  p {
+    text-align: left;
+    color: $mg_text_dark;
+    font-weight: 300;
+    font-size: 0.9em;
+    margin-top: 1rem;
+  }
+  button {
+    background-color: $gold;
+    color: $mg_text_light;
+    align-self: center;
+    border: 0;
+    padding: 0.75rem 1.65rem 0.7rem;
+    margin: 1.25rem 0 1.25rem;
+    font-weight: 100;
+  }
+}

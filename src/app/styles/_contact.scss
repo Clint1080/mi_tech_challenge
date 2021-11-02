@@ -1,0 +1,137 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 800px) {
+    flex-direction: row;
+  }
+  section {
+    padding: 0 1rem 0;
+
+    @media screen and (min-width: 800px) {
+      width: 100%;
+      max-width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    p {
+      color: $mg_text_light;
+      text-align: justify;
+      margin-top: 2rem;
+      max-width: 480px;
+      font-weight: 300;
+      @media screen and (min-width: 800px) {
+        text-align: left;
+      }
+    }
+    span.link {
+      color: $gold;
+    }
+  }
+  h1 {
+    color: $mg_text_light;
+    text-align: left;
+    font-size: 2.75em;
+    display: inline-block;
+    position: relative;
+  }
+  h1:after {
+    content: "";
+    position: absolute;
+    width: 66%;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    border-bottom: 4px solid $gold;
+  }
+  section.form {
+    background-color: #fff;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    @media screen and (min-width: 800px) {
+      height: 100vh;
+    }
+    h2 {
+      font-size: 1.75em;
+      margin: 2rem 0 0.5rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      @media screen and (min-width: 800px) {
+        min-width: 90%;
+        align-self: center;
+      }
+    }
+    @media screen and (min-width: 800px) {
+      .form_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        input[type="text"],
+        .required_container {
+          width: 100%;
+        }
+        #f_name,
+        #title {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+  #f_name,
+  #l_name,
+  #title,
+  #message {
+    margin-top: 1rem;
+  }
+  #title {
+    margin-bottom: 1rem;
+  }
+  input[type="text"],
+  textarea {
+    background: $mg_inputs_light;
+    border: none;
+    padding: 0.75rem 0.5rem;
+    font-weight: 400;
+    // margin-top: 1rem;
+    width: 100%;
+  }
+  input[type="submit"] {
+    background-color: $gold;
+    color: $mg_text_light;
+    align-self: center;
+    border: 0;
+    padding: 0.75rem 1.65rem 0.7rem;
+    margin: 1.25rem 0 1.25rem;
+    font-weight: 100;
+  }
+  ::placeholder {
+    color: $mg_text_dark;
+    font-size: 0.8em;
+  }
+  label.required_container {
+    display: flex;
+    align-items: center;
+  }
+  span.required {
+    display: none;
+  }
+  .required_styles {
+    border: 1px solid $danger;
+    @media screen and (min-width: 800px) {
+      margin: 14px 0;
+    }
+
+    span {
+      display: inline-block;
+      padding: 0.75rem 0.5rem;
+      //   margin-top: 1rem;
+      background-color: #f4f4f4;
+      color: $danger;
+    }
+  }
+}
+input:required:invalid {
+  outline: none;
+}
