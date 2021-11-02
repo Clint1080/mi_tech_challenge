@@ -7,22 +7,6 @@ import Route from "../components/Route";
 import Link from "../components/Navigation";
 
 function App() {
-  // return (
-  //   <div className="App">
-  //     <Router>
-  //       <Header />
-  //       <Switch>
-  //         <Route path="/contact">
-  //           <Contact />
-  //         </Route>
-  //         <Route path="/">
-  //           <Home />
-  //         </Route>
-  //       </Switch>
-  //     </Router>
-  //   </div>
-  // );
-
   return (
     <div className="App">
       <Route path="/">
