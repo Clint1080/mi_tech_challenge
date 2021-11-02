@@ -32,9 +32,12 @@ message VARCHAR(755)
 ```
 
 4. In the terminal navigate the server folder of this project and run this command to import the seed data I have provided.
+
    ```
    psql mi_challenge < seed.sql
    ```
+
+5. You should be all setup and going now.
 
 # Trying out new architecture
 
