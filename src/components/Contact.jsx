@@ -19,7 +19,7 @@ const Contact = () => {
           Lorem ipsume dolor sit amet, consectetur adipiscing elit, sed do dos
           eiusmod tempor incididunt ut labore et trace dolore magna aliqua.
         </p>
-        <p>
+        <p className="cta">
           Proi sagittis nisl rhoncus mattis rhoncus. At augue eget arcu dictum
           varius duis at consectetur lorem
         </p>

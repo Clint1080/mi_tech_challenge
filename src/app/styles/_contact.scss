@@ -27,6 +27,11 @@
     span.link {
       color: $gold;
     }
+    @media screen and (max-width: 800px) {
+      .cta {
+        padding-bottom: 5rem;
+      }
+    }
   }
   h1 {
     color: $mg_text_light;
@@ -43,6 +48,9 @@
     bottom: -2px;
     left: 0;
     border-bottom: 4px solid $gold;
+    @media screen and (min-width: 800px) {
+      width: 192px;
+    }
   }
   section.form {
     background-color: #fff;
