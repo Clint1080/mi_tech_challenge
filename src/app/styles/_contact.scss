@@ -68,7 +68,7 @@
       flex-direction: column;
       @media screen and (min-width: 800px) {
         min-width: 90%;
-        align-self: center;
+        // align-self: center;
       }
     }
     @media screen and (min-width: 800px) {
@@ -83,6 +83,7 @@
         #f_name,
         #title {
           margin-right: 1rem;
+          max-width: 48%;
         }
       }
     }

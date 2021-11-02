@@ -3,7 +3,7 @@ import logo from "../assets/Logo.png";
 
 const Link = ({ className, href, children }) => {
   const onClick = (e) => {
-    //allowing the browser to open a new tab using ctrl click
+    // Learned this from Stephen Grider on Udemy I will most likely use browser router next time
     if (e.metaKay || e.ctrlKey) {
       return;
     }

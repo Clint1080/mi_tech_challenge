@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+// Learned this from Stephen Grider on Udemy I will most likely use browser router next time
 const Route = ({ path, children }) => {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
 
