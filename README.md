@@ -5,14 +5,16 @@ I built this with mobile first in mind. Even though this is small I used the fil
 
 # Get up and running!
 
-1. Clone this project onto your computer.
+1. Clone this project onto your computer. I'm assuming you have installed postgres and it is running.
 
 2. log into the PSQL shell. We will be using the postgres user since this is not a production site.
 
 3. Navigate to the server folder of this project and find database.sql. Copy all the commands in that file and then run them in your psql shell.
 
 4. In the terminal navigate the server folder of this project and run this command to import the seed data I have provided.
+   ```
    psql mi_challenge < seed.sql
+   ```
 
 # Trying out new architecture
 
