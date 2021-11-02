@@ -3,7 +3,8 @@ CREATE DATABASE mi_challenge;
 CREATE TABLE "cards" (
 card_id SERIAL PRIMARY KEY,
 title VARCHAR(150),
-paragraph VARCHAR(755)
+paragraph VARCHAR(755),
+url VARCHAR(50)
 );
 
 CREATE TABLE "forms" (

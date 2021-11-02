@@ -27,8 +27,7 @@ SET default_table_access_method = heap;
 CREATE TABLE public.cards (
     card_id integer NOT NULL,
     title character varying(150),
-    paragraph character varying(755),
-    url character varying(255)
+    paragraph character varying(755)
 );
 
 
@@ -112,10 +111,10 @@ ALTER TABLE ONLY public.forms ALTER COLUMN form_id SET DEFAULT nextval('public.f
 -- Data for Name: cards; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.cards (card_id, title, paragraph, url) FROM stdin;
-1	Heading Two	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore	/assets/Talkie.png
-2	Heading Two	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore	/assets/Rabbit.png
-3	Heading Two	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore	/assets/Shield.png
+COPY public.cards (card_id, title, paragraph) FROM stdin;
+1	Heading Two	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+2	Heading Two	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+3	Heading Two	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
 \.
 
 
