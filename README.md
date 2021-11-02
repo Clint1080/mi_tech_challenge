@@ -9,7 +9,26 @@ I built this with mobile first in mind. Even though this is small I used the fil
 
 2. log into the PSQL shell. We will be using the postgres user since this is not a production site.
 
-3. Navigate to the server folder of this project and find database.sql. Copy all the commands in that file and then run them in your psql shell.
+3. These are the commands we will use to create the database and create the tables needed. You can aslo find them located in the server folder in the file named database.sql
+
+```
+CREATE DATABASE mi_challenge;
+
+CREATE TABLE "cards" (
+card_id SERIAL PRIMARY KEY,
+title VARCHAR(150),
+paragraph VARCHAR(755)
+);
+
+CREATE TABLE "forms" (
+form_id SERIAL PRIMARY KEY,
+first_name VARCHAR(50),
+last_name VARCHAR(50),
+title VARCHAR(50),
+email VARCHAR (50),
+message VARCHAR(755)
+);
+```
 
 4. In the terminal navigate the server folder of this project and run this command to import the seed data I have provided.
    ```
