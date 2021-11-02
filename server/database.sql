@@ -1,3 +1,5 @@
+CREATE DATABASE mi_challenge;
+
 CREATE TABLE "cards" (
 card_id SERIAL PRIMARY KEY,
 title VARCHAR(150),

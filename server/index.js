@@ -12,5 +12,6 @@ app.use(express.json());
 const controller = require("./controllers/controller");
 
 app.get("/", controller.getCardInfo);
+app.post("/forms", controller.formInfo);
 
 app.listen(3001, () => console.log("server is running on 3001"));
