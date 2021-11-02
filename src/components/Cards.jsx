@@ -1,51 +1,37 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import talkie from "../assets/Talkie.png";
 import rabbit from "../assets/Rabbit.png";
 import shield from "../assets/Shield.png";
 const Cards = () => {
-  return (
-    <ul className="cards">
-      <li className="card">
+  const [cards, setCards] = useState([]);
+
+  const getCards = async () => {
+    const res = await axios.get(`http://localhost:3001/`);
+    setCards(res.data);
+  };
+  console.log(cards);
+
+  useEffect(() => {
+    getCards();
+  }, []);
+
+  const showCards = cards.map((card) => {
+    return (
+      <li key={card.card_id} className="card">
         <div className="card_image_container">
-          <img src={talkie}></img>
+          <img src={card.url}></img>
         </div>
         <div className="card_detail_container">
-          <h2>Heading Two</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore
-          </p>
+          <h2>{card.title}</h2>
+          <p>{card.paragraph}</p>
           <button>Learn More</button>
         </div>
       </li>
-      <li className="card">
-        <div className="card_image_container">
-          <img src={rabbit}></img>
-        </div>
-        <div className="card_detail_container">
-          <h2>Heading Two</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore
-          </p>
-          <button>Learn More</button>
-        </div>
-      </li>
-      <li className="card">
-        <div className="card_image_container">
-          <img src={shield}></img>
-        </div>
-        <div className="card_detail_container">
-          <h2>Heading Two</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore
-          </p>
-          <button>Learn More</button>
-        </div>
-      </li>
-    </ul>
-  );
+    );
+  });
+
+  return <ul className="cards">{showCards}</ul>;
 };
 
 export default Cards;

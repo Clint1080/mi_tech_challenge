@@ -28,6 +28,7 @@ title VARCHAR(50),
 email VARCHAR (50),
 message VARCHAR(755)
 );
+
 ```
 
 4. In the terminal navigate the server folder of this project and run this command to import the seed data I have provided.
