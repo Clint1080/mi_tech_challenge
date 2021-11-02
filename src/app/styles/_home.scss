@@ -33,4 +33,17 @@
     left: 0;
     border-bottom: 4px solid $gold;
   }
+  #de_duplicate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li {
+      color: $mg_text_light;
+      list-style-type: none;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
 }
