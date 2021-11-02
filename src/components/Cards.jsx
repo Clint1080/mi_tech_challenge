@@ -10,7 +10,6 @@ const Cards = () => {
     const res = await axios.get(`http://localhost:3001/`);
     setCards(res.data);
   };
-  console.log(cards);
 
   useEffect(() => {
     getCards();
