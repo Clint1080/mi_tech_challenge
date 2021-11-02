@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import talkie from "../assets/Talkie.png";
-import rabbit from "../assets/Rabbit.png";
-import shield from "../assets/Shield.png";
+
 const Cards = () => {
   const [cards, setCards] = useState([]);
 

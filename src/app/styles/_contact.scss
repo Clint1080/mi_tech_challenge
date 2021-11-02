@@ -139,6 +139,9 @@
       color: $danger;
     }
   }
+  textarea {
+    resize: none;
+  }
 }
 input:required:invalid {
   outline: none;
